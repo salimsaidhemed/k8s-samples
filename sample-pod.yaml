@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-basic-pod
+  labels:
+    name: sample-basic-app
+spec:
+  containers:
+  - name: sample-basic-ctr
+    image: salimsaidhemed1989/sample-basic:1.0
+    ports:
+      - containerPort: 5000
